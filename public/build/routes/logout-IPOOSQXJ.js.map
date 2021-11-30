@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B/PROJECT FULLSTACK/remix-js/jokes/app/routes/logout.tsx?browser", "../../../app/routes/logout.tsx"],
+  "sourcesContent": ["export * from \"/media/zegveld/9EA0FA39A0FA180B/PROJECT FULLSTACK/remix-js/jokes/app/routes/logout.tsx\";", "import type { ActionFunction, LoaderFunction } from \"remix\";\nimport { redirect } from \"remix\";\nimport { logout } from \"~/utils/session.server\";\n\nexport let action: ActionFunction = async ({ request }) => {\n  return logout(request);\n};\n\nexport let loader: LoaderFunction = async () => {\n  return redirect(\"/\");\n};\n"],
+  "mappings": ";;;;;;;;;;;;;AAAA;;;ACAA;AAEA,qBAAuB;AAEhB,IAAI,SAAyB,OAAO,EAAE,cAAc;AACzD,SAAO,2BAAO;AAAA;AAGT,IAAI,SAAyB,YAAY;AAC9C,SAAO,oCAAS;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/jokes/app/routes/jokes/CommentForm.tsx?browser"],
+  "sourcesContent": ["export * from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/jokes/app/routes/jokes/CommentForm.tsx\";"],
+  "mappings": ";;;;;AAAA;",
+  "names": []
+}
