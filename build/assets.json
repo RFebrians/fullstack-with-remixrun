@@ -1,18 +1,18 @@
 {
-  "version": "82381a46",
+  "version": "222f0a40",
   "entry": {
-    "module": "/build/entry.client-JZJXEJOO.js",
+    "module": "/build/entry.client-R4BO64Y4.js",
     "imports": [
-      "/build/_shared/chunk-BE4YDBKA.js",
-      "/build/_shared/chunk-GUACUXYP.js",
-      "/build/_shared/chunk-AKSB5QXU.js"
+      "/build/_shared/chunk-QYLTGTJZ.js",
+      "/build/_shared/chunk-KNZAXA4D.js",
+      "/build/_shared/chunk-E7VMOUYL.js"
     ]
   },
   "routes": {
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-JV72YGHX.js",
+      "module": "/build/root-DPFRVIXK.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": true,
@@ -22,7 +22,7 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-KZWGU3EN.js",
+      "module": "/build/routes/index-BJULKINE.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -32,10 +32,10 @@
       "id": "routes/jokes",
       "parentId": "root",
       "path": "jokes",
-      "module": "/build/routes/jokes-KGKOATPN.js",
+      "module": "/build/routes/jokes-VDXIGVUX.js",
       "imports": [
-        "/build/_shared/chunk-NZCB3PMS.js",
-        "/build/_shared/chunk-EYYFEV5H.js"
+        "/build/_shared/chunk-SMZ7NZN3.js",
+        "/build/_shared/chunk-JHG2B4Q5.js"
       ],
       "hasAction": false,
       "hasLoader": true,
@@ -46,10 +46,10 @@
       "id": "routes/jokes/$jokeId",
       "parentId": "routes/jokes",
       "path": ":jokeId",
-      "module": "/build/routes/jokes/$jokeId-4FEVDG5U.js",
+      "module": "/build/routes/jokes/$jokeId-DKAXTVKW.js",
       "imports": [
-        "/build/_shared/chunk-YPVNNCI5.js",
-        "/build/_shared/chunk-ATCWGBU5.js"
+        "/build/_shared/chunk-EAXH2XV6.js",
+        "/build/_shared/chunk-HAENQHOJ.js"
       ],
       "hasAction": true,
       "hasLoader": true,
@@ -60,7 +60,7 @@
       "id": "routes/jokes/CommentForm",
       "parentId": "routes/jokes",
       "path": "CommentForm",
-      "module": "/build/routes/jokes/CommentForm-4HIXN3AO.js",
+      "module": "/build/routes/jokes/CommentForm-XJMJCZC6.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -70,7 +70,7 @@
       "id": "routes/jokes/comment",
       "parentId": "routes/jokes",
       "path": "comment",
-      "module": "/build/routes/jokes/comment-5GVS6CJR.js",
+      "module": "/build/routes/jokes/comment-QBQTWC7U.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -80,7 +80,7 @@
       "id": "routes/jokes/index",
       "parentId": "routes/jokes",
       "index": true,
-      "module": "/build/routes/jokes/index-FP62D6EP.js",
+      "module": "/build/routes/jokes/index-CPHHHEM5.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": true,
@@ -90,10 +90,10 @@
       "id": "routes/jokes/new",
       "parentId": "routes/jokes",
       "path": "new",
-      "module": "/build/routes/jokes/new-UJDNRP5R.js",
+      "module": "/build/routes/jokes/new-UZ5366YL.js",
       "imports": [
-        "/build/_shared/chunk-YPVNNCI5.js",
-        "/build/_shared/chunk-ATCWGBU5.js"
+        "/build/_shared/chunk-EAXH2XV6.js",
+        "/build/_shared/chunk-HAENQHOJ.js"
       ],
       "hasAction": true,
       "hasLoader": true,
@@ -104,9 +104,9 @@
       "id": "routes/jokes[.]rss",
       "parentId": "root",
       "path": "jokes.rss",
-      "module": "/build/routes/jokes[.]rss-VLDAJF5W.js",
+      "module": "/build/routes/jokes[.]rss-CIG3MBZY.js",
       "imports": [
-        "/build/_shared/chunk-NZCB3PMS.js"
+        "/build/_shared/chunk-SMZ7NZN3.js"
       ],
       "hasAction": false,
       "hasLoader": true,
@@ -117,10 +117,10 @@
       "id": "routes/login",
       "parentId": "root",
       "path": "login",
-      "module": "/build/routes/login-4KW6W7YC.js",
+      "module": "/build/routes/login-JYJRDBGS.js",
       "imports": [
-        "/build/_shared/chunk-NZCB3PMS.js",
-        "/build/_shared/chunk-EYYFEV5H.js"
+        "/build/_shared/chunk-SMZ7NZN3.js",
+        "/build/_shared/chunk-JHG2B4Q5.js"
       ],
       "hasAction": true,
       "hasLoader": false,
@@ -131,10 +131,10 @@
       "id": "routes/logout",
       "parentId": "root",
       "path": "logout",
-      "module": "/build/routes/logout-2V7DFSMX.js",
+      "module": "/build/routes/logout-R6WYSFXP.js",
       "imports": [
-        "/build/_shared/chunk-ATCWGBU5.js",
-        "/build/_shared/chunk-EYYFEV5H.js"
+        "/build/_shared/chunk-HAENQHOJ.js",
+        "/build/_shared/chunk-JHG2B4Q5.js"
       ],
       "hasAction": true,
       "hasLoader": true,
@@ -145,7 +145,7 @@
       "id": "routes/my-first-post",
       "parentId": "root",
       "path": "my-first-post",
-      "module": "/build/routes/my-first-post-AXVG4K2K.js",
+      "module": "/build/routes/my-first-post-EN6UDHK2.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -155,7 +155,7 @@
       "id": "routes/posts/90s-mix-cdr",
       "parentId": "root",
       "path": "posts/90s-mix-cdr",
-      "module": "/build/routes/posts/90s-mix-cdr-M5UQLS5W.js",
+      "module": "/build/routes/posts/90s-mix-cdr-BBA2JPUL.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -165,12 +165,12 @@
       "id": "routes/posts/test category",
       "parentId": "root",
       "path": "posts/test category",
-      "module": "/build/routes/posts/test category-GK6JUKZH.js",
+      "module": "/build/routes/posts/test category-ZIP7E7NA.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-82381A46.js"
+  "url": "/build/manifest-222F0A40.js"
 }
