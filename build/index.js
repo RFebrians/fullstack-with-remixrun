@@ -68,7 +68,7 @@ function handleRequest(request, responseStatusCode, responseHeaders, remixContex
   });
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/root.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/root.tsx
 var root_exports = {};
 __export(root_exports, {
   CatchBoundary: () => CatchBoundary,
@@ -89,7 +89,7 @@ var global_medium_default = "/build/_assets/global-medium-DRHJR3JT.css";
 // app/styles/global-large.css
 var global_large_default = "/build/_assets/global-large-NKTQAWDZ.css";
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/root.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/root.tsx
 var links = () => {
   return [
     { rel: "stylesheet", href: global_default },
@@ -148,7 +148,7 @@ function ErrorBoundary({ error }) {
   }, /* @__PURE__ */ React.createElement("h1", null, "App Error"), /* @__PURE__ */ React.createElement("pre", null, error.message)));
 }
 
-// mdx:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/posts/test category.md
+// mdx:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/posts/test category.md
 var test_category_exports = {};
 __export(test_category_exports, {
   attributes: () => attributes,
@@ -175,7 +175,7 @@ var headers = typeof attributes !== "undefined" && attributes.headers;
 var meta2 = typeof attributes !== "undefined" && attributes.meta;
 var links2 = void 0;
 
-// mdx:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/posts/90s-mix-cdr.md
+// mdx:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/posts/90s-mix-cdr.md
 var s_mix_cdr_exports = {};
 __export(s_mix_cdr_exports, {
   attributes: () => attributes2,
@@ -206,65 +206,7 @@ var headers2 = typeof attributes2 !== "undefined" && attributes2.headers;
 var meta3 = typeof attributes2 !== "undefined" && attributes2.meta;
 var links3 = void 0;
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/actions.tsx
-var actions_exports = {};
-__export(actions_exports, {
-  action: () => action,
-  default: () => ActionsDemo,
-  meta: () => meta4
-});
-var import_react3 = __toModule(require("react"));
-var import_remix3 = __toModule(require("remix"));
-function meta4() {
-  return { title: "Actions Demo" };
-}
-var action = async ({ request }) => {
-  let formData = await request.formData();
-  let answer = formData.get("answer");
-  if (typeof answer !== "string") {
-    return (0, import_remix3.json)("Come on, at least try!", { status: 400 });
-  }
-  if (answer !== "egg") {
-    return (0, import_remix3.json)(`Sorry, ${answer} is not right.`, { status: 400 });
-  }
-  return (0, import_remix3.redirect)("/demos/correct");
-};
-function ActionsDemo() {
-  let actionMessage = (0, import_remix3.useActionData)();
-  let answerRef = (0, import_react3.useRef)(null);
-  (0, import_react3.useEffect)(() => {
-    if (actionMessage && answerRef.current) {
-      answerRef.current.select();
-    }
-  }, [actionMessage]);
-  return /* @__PURE__ */ React.createElement("div", {
-    className: "remix__page"
-  }, /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement("h2", null, "Actions!"), /* @__PURE__ */ React.createElement("p", null, "This form submission will send a post request that we handle in our `action` export. Any route can export an action to handle data mutations."), /* @__PURE__ */ React.createElement(import_remix3.Form, {
-    method: "post",
-    className: "remix__form"
-  }, /* @__PURE__ */ React.createElement("h3", null, "Post an Action"), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("i", null, "What is more useful when it is broken?")), /* @__PURE__ */ React.createElement("label", null, /* @__PURE__ */ React.createElement("div", null, "Answer:"), /* @__PURE__ */ React.createElement("input", {
-    ref: answerRef,
-    name: "answer",
-    type: "text"
-  })), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", null, "Answer!")), actionMessage ? /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("b", null, actionMessage)) : null)), /* @__PURE__ */ React.createElement("aside", null, /* @__PURE__ */ React.createElement("h3", null, "Additional Resources"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, "Guide:", " ", /* @__PURE__ */ React.createElement("a", {
-    href: "https://remix.run/guides/data-writes"
-  }, "Data Writes")), /* @__PURE__ */ React.createElement("li", null, "API:", " ", /* @__PURE__ */ React.createElement("a", {
-    href: "https://remix.run/api/conventions#action"
-  }, "Route Action Export")), /* @__PURE__ */ React.createElement("li", null, "API:", " ", /* @__PURE__ */ React.createElement("a", {
-    href: "https://remix.run/api/remix#useactiondata"
-  }, /* @__PURE__ */ React.createElement("code", null, "useActionData"))))));
-}
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/correct.tsx
-var correct_exports = {};
-__export(correct_exports, {
-  default: () => NiceWork
-});
-function NiceWork() {
-  return /* @__PURE__ */ React.createElement("h1", null, "You got it right!");
-}
-
-// mdx:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/my-first-post.md
+// mdx:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/my-first-post.md
 var my_first_post_exports = {};
 __export(my_first_post_exports, {
   attributes: () => attributes3,
@@ -272,9 +214,9 @@ __export(my_first_post_exports, {
   filename: () => filename3,
   headers: () => headers3,
   links: () => links4,
-  meta: () => meta5
+  meta: () => meta4
 });
-var import_react4 = __toModule(require("react"));
+var import_react3 = __toModule(require("react"));
 var attributes3 = {
   "title": "My First Post"
 };
@@ -286,164 +228,19 @@ function MDXContent3(props = {}) {
     ul: "ul",
     li: "li"
   }, props.components), { wrapper: MDXLayout } = _components;
-  const _content = /* @__PURE__ */ import_react4.default.createElement(import_react4.default.Fragment, null, /* @__PURE__ */ import_react4.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react4.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react4.default.createElement(_components.h1, null, "This is Demo Section"), "\n", /* @__PURE__ */ import_react4.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react4.default.createElement(_components.h2, null, "Soon"), "\n", /* @__PURE__ */ import_react4.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react4.default.createElement(_components.ul, null, "\n", /* @__PURE__ */ import_react4.default.createElement(_components.li, null, "Created using markdown format"), "\n"));
-  return MDXLayout ? /* @__PURE__ */ import_react4.default.createElement(MDXLayout, __spreadValues({}, props), _content) : _content;
+  const _content = /* @__PURE__ */ import_react3.default.createElement(import_react3.default.Fragment, null, /* @__PURE__ */ import_react3.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react3.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react3.default.createElement(_components.h1, null, "This is Demo Section"), "\n", /* @__PURE__ */ import_react3.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react3.default.createElement(_components.h2, null, "Soon"), "\n", /* @__PURE__ */ import_react3.default.createElement(_components.hr, null), "\n", /* @__PURE__ */ import_react3.default.createElement(_components.ul, null, "\n", /* @__PURE__ */ import_react3.default.createElement(_components.li, null, "Created using markdown format"), "\n"));
+  return MDXLayout ? /* @__PURE__ */ import_react3.default.createElement(MDXLayout, __spreadValues({}, props), _content) : _content;
 }
 var my_first_post_default = MDXContent3;
 var filename3 = "my-first-post.md";
 var headers3 = typeof attributes3 !== "undefined" && attributes3.headers;
-var meta5 = typeof attributes3 !== "undefined" && attributes3.meta;
+var meta4 = typeof attributes3 !== "undefined" && attributes3.meta;
 var links4 = void 0;
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/params.tsx
-var params_exports = {};
-__export(params_exports, {
-  default: () => Boundaries,
-  meta: () => meta6
-});
-var import_remix4 = __toModule(require("remix"));
-function meta6() {
-  return { title: "Boundaries Demo" };
-}
-function Boundaries() {
-  return /* @__PURE__ */ React.createElement("div", {
-    className: "remix__page"
-  }, /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement(import_remix4.Outlet, null)), /* @__PURE__ */ React.createElement("aside", null, /* @__PURE__ */ React.createElement("h2", null, "Click these Links"), /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
-    to: "."
-  }, "Start over")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
-    to: "one"
-  }, "Param: ", /* @__PURE__ */ React.createElement("i", null, "one"))), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
-    to: "two"
-  }, "Param: ", /* @__PURE__ */ React.createElement("i", null, "two"))), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
-    to: "this-record-does-not-exist"
-  }, "This will be a 404")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
-    to: "shh-its-a-secret"
-  }, "And this will be 401 Unauthorized")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix4.Link, {
-    to: "kaboom"
-  }, "This one will throw an error")))));
-}
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/params/index.tsx
-var params_exports2 = {};
-__export(params_exports2, {
-  default: () => Boundaries2
-});
-function Boundaries2() {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h2", null, "Params"), /* @__PURE__ */ React.createElement("p", null, "When you name a route segment with $ like", " ", /* @__PURE__ */ React.createElement("code", null, "routes/users/$userId.js"), ", the $ segment will be parsed from the URL and sent to your loaders and actions by the same name."), /* @__PURE__ */ React.createElement("h2", null, "Errors"), /* @__PURE__ */ React.createElement("p", null, "When a route throws and error in it's action, loader, or component, Remix automatically catches it, won't even try to render the component, but it will render the route's ErrorBoundary instead. If the route doesn't have one, it will bubble up to the routes above it until it hits the root."), /* @__PURE__ */ React.createElement("p", null, "So be as granular as you want with your error handling."), /* @__PURE__ */ React.createElement("h2", null, "Not Found"), /* @__PURE__ */ React.createElement("p", null, "(and other", " ", /* @__PURE__ */ React.createElement("a", {
-    href: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses"
-  }, "client errors"), ")"), /* @__PURE__ */ React.createElement("p", null, "Loaders and Actions can throw a ", /* @__PURE__ */ React.createElement("code", null, "Response"), " instead of an error and Remix will render the CatchBoundary instead of the component. This is great when loading data from a database isn't found. As soon as you know you can't render the component normally, throw a 404 response and send your app into the catch boundary. Just like error boundaries, catch boundaries bubble, too."));
-}
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/params/$id.tsx
-var id_exports = {};
-__export(id_exports, {
-  CatchBoundary: () => CatchBoundary2,
-  ErrorBoundary: () => ErrorBoundary2,
-  default: () => ParamDemo,
-  loader: () => loader,
-  meta: () => meta7
-});
-var import_remix5 = __toModule(require("remix"));
-var loader = async ({ params }) => {
-  if (params.id === "this-record-does-not-exist") {
-    throw new Response("Not Found", { status: 404 });
-  }
-  if (params.id === "shh-its-a-secret") {
-    throw (0, import_remix5.json)({ webmasterEmail: "hello@remix.run" }, { status: 401 });
-  }
-  if (params.id === "kaboom") {
-    lol();
-  }
-  return { param: params.id };
-};
-function ParamDemo() {
-  let data = (0, import_remix5.useLoaderData)();
-  return /* @__PURE__ */ React.createElement("h1", null, "The param is ", /* @__PURE__ */ React.createElement("i", {
-    style: { color: "red" }
-  }, data.param));
-}
-function CatchBoundary2() {
-  let caught = (0, import_remix5.useCatch)();
-  let message;
-  switch (caught.status) {
-    case 401:
-      message = /* @__PURE__ */ React.createElement("p", null, "Looks like you tried to visit a page that you do not have access to. Maybe ask the webmaster (", caught.data.webmasterEmail, ") for access.");
-    case 404:
-      message = /* @__PURE__ */ React.createElement("p", null, "Looks like you tried to visit a page that does not exist.");
-    default:
-      message = /* @__PURE__ */ React.createElement("p", null, "There was a problem with your request!", /* @__PURE__ */ React.createElement("br", null), caught.status, " ", caught.statusText);
-  }
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h2", null, "Oops!"), /* @__PURE__ */ React.createElement("p", null, message), /* @__PURE__ */ React.createElement("p", null, "(Isn't it cool that the user gets to stay in context and try a different link in the parts of the UI that didn't blow up?)"));
-}
-function ErrorBoundary2({ error }) {
-  console.error(error);
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("h2", null, "Error!"), /* @__PURE__ */ React.createElement("p", null, error.message), /* @__PURE__ */ React.createElement("p", null, "(Isn't it cool that the user gets to stay in context and try a different link in the parts of the UI that didn't blow up?)"));
-}
-var meta7 = ({ data }) => {
-  return {
-    title: data ? `Param: ${data.param}` : "Oops..."
-  };
-};
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/about.tsx
-var about_exports = {};
-__export(about_exports, {
-  default: () => Index,
-  links: () => links5,
-  meta: () => meta8
-});
-var import_remix6 = __toModule(require("remix"));
-
-// app/styles/demos/about.css
-var about_default = "/build/_assets/about-GGM5BPB3.css";
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/about.tsx
-var meta8 = () => {
-  return {
-    title: "About Remix"
-  };
-};
-var links5 = () => {
-  return [{ rel: "stylesheet", href: about_default }];
-};
-function Index() {
-  return /* @__PURE__ */ React.createElement("div", {
-    className: "about"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "about__intro"
-  }, /* @__PURE__ */ React.createElement("h2", null, "About Us"), /* @__PURE__ */ React.createElement("p", null, "Ok, so this page isn't really ", /* @__PURE__ */ React.createElement("em", null, "about us"), ", but we did want to show you a few more things Remix can do."), /* @__PURE__ */ React.createElement("p", null, "Did you notice that things look a little different on this page? The CSS that we import in the route file and include in its", " ", /* @__PURE__ */ React.createElement("code", null, "links"), " export is only included on this route and its children."), /* @__PURE__ */ React.createElement("p", null, "Wait a sec...", /* @__PURE__ */ React.createElement("em", null, "its children"), "? To understand what we mean by this,", " ", /* @__PURE__ */ React.createElement("a", {
-    href: "https://remix.run/tutorial/4-nested-routes-params"
-  }, "read all about nested routes in the docs"), "."), /* @__PURE__ */ React.createElement("hr", null), /* @__PURE__ */ React.createElement(import_remix6.Outlet, null)));
-}
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/about/index.tsx
-var about_exports2 = {};
-__export(about_exports2, {
-  default: () => AboutIndex
-});
-var import_remix7 = __toModule(require("remix"));
-function AboutIndex() {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "You are looking at the index route for the ", /* @__PURE__ */ React.createElement("code", null, "/about"), " URL segment, but there are nested routes as well!"), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("strong", null, /* @__PURE__ */ React.createElement(import_remix7.Link, {
-    to: "whoa"
-  }, "Check out one of them here."))));
-}
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/demos/about/whoa.tsx
-var whoa_exports = {};
-__export(whoa_exports, {
-  default: () => AboutIndex2
-});
-var import_remix8 = __toModule(require("remix"));
-function AboutIndex2() {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Whoa, this is a nested route! We render the ", /* @__PURE__ */ React.createElement("code", null, "/about"), " layout route component, and its ", /* @__PURE__ */ React.createElement("code", null, "Outlet"), " renders our route component. \u{1F92F}"), /* @__PURE__ */ React.createElement("p", null, /* @__PURE__ */ React.createElement("strong", null, /* @__PURE__ */ React.createElement(import_remix8.Link, {
-    to: ".."
-  }, "Go back to the ", /* @__PURE__ */ React.createElement("code", null, "/about"), " index."))));
-}
-
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes[.]rss.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes[.]rss.tsx
 var jokes_rss_exports = {};
 __export(jokes_rss_exports, {
-  loader: () => loader2
+  loader: () => loader
 });
 
 // app/utils/db.server.ts
@@ -460,8 +257,8 @@ if (process.env.NODE_ENV === "production") {
   db = global.__db;
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes[.]rss.tsx
-var loader2 = async ({ request }) => {
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes[.]rss.tsx
+var loader = async ({ request }) => {
   let jokes = await db.joke.findMany({
     take: 100,
     orderBy: { createdAt: "desc" },
@@ -505,17 +302,17 @@ var loader2 = async ({ request }) => {
   });
 };
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/logout.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/logout.tsx
 var logout_exports = {};
 __export(logout_exports, {
-  action: () => action2,
-  loader: () => loader3
+  action: () => action,
+  loader: () => loader2
 });
-var import_remix10 = __toModule(require("remix"));
+var import_remix4 = __toModule(require("remix"));
 
 // app/utils/session.server.ts
 var import_bcrypt = __toModule(require("bcrypt"));
-var import_remix9 = __toModule(require("remix"));
+var import_remix3 = __toModule(require("remix"));
 async function register({ username, password }) {
   let passwordHash = await import_bcrypt.default.hash(password, 10);
   return db.user.create({
@@ -535,7 +332,7 @@ var sessionSecret = process.env.SESSION_SECRET;
 if (!sessionSecret) {
   throw new Error("SESSION_SECRET must be set");
 }
-var storage = (0, import_remix9.createCookieSessionStorage)({
+var storage = (0, import_remix3.createCookieSessionStorage)({
   cookie: {
     name: "RJ_session",
     secure: true,
@@ -561,7 +358,7 @@ async function requireUserId(request, redirectTo = new URL(request.url).pathname
   let userId = session.get("userId");
   if (!userId || typeof userId !== "string") {
     let searchParams = new URLSearchParams([["redirectTo", redirectTo]]);
-    throw (0, import_remix9.redirect)(`/login?${searchParams}`);
+    throw (0, import_remix3.redirect)(`/login?${searchParams}`);
   }
   return userId;
 }
@@ -579,7 +376,7 @@ async function getUser(request) {
 }
 async function logout(request) {
   let session = await storage.getSession(request.headers.get("Cookie"));
-  return (0, import_remix9.redirect)("/login", {
+  return (0, import_remix3.redirect)("/login", {
     headers: {
       "Set-Cookie": await storage.destroySession(session)
     }
@@ -588,74 +385,74 @@ async function logout(request) {
 async function createUserSession(userId, redirectTo) {
   let session = await storage.getSession();
   session.set("userId", userId);
-  return (0, import_remix9.redirect)(redirectTo, {
+  return (0, import_remix3.redirect)(redirectTo, {
     headers: {
       "Set-Cookie": await storage.commitSession(session)
     }
   });
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/logout.tsx
-var action2 = async ({ request }) => {
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/logout.tsx
+var action = async ({ request }) => {
   return logout(request);
 };
-var loader3 = async () => {
-  return (0, import_remix10.redirect)("/");
+var loader2 = async () => {
+  return (0, import_remix4.redirect)("/");
 };
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/index.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/index.tsx
 var routes_exports = {};
 __export(routes_exports, {
-  default: () => Index2,
-  links: () => links6,
-  meta: () => meta9
+  default: () => Index,
+  links: () => links5,
+  meta: () => meta5
 });
-var import_remix11 = __toModule(require("remix"));
+var import_remix5 = __toModule(require("remix"));
 
 // app/styles/index.css
 var styles_default = "/build/_assets/index-LQJHUV2J.css";
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/index.tsx
-var meta9 = () => {
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/index.tsx
+var meta5 = () => {
   return {
     title: "Forum Sample",
     description: "An Application Fullstack using Remix"
   };
 };
-var links6 = () => {
+var links5 = () => {
   return [{ rel: "stylesheet", href: styles_default }];
 };
-function Index2() {
+function Index() {
   return /* @__PURE__ */ React.createElement("div", {
     className: "container"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "content"
-  }, /* @__PURE__ */ React.createElement("h1", null, "Forum ", /* @__PURE__ */ React.createElement("span", null, "Remix")), /* @__PURE__ */ React.createElement("h4", null, " An Application using Remix JS"), /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("nav", null, /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix11.Link, {
+  }, /* @__PURE__ */ React.createElement("h1", null, "Forum ", /* @__PURE__ */ React.createElement("span", null, "Remix")), /* @__PURE__ */ React.createElement("h4", null, " An Application using Remix JS"), /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("nav", null, /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix5.Link, {
     to: "jokes"
-  }, "Go To Index")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix11.Link, {
+  }, "Go To Index")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix5.Link, {
     reloadDocument: true,
     to: "/jokes.rss"
-  }, "RSS")), /* @__PURE__ */ React.createElement(import_remix11.Link, {
+  }, "RSS")), /* @__PURE__ */ React.createElement(import_remix5.Link, {
     reloadDocument: true,
     to: "/my-first-post.md"
   }, "Posts")))));
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes.tsx
 var jokes_exports = {};
 __export(jokes_exports, {
   default: () => JokesScreen,
-  links: () => links7,
-  loader: () => loader4
+  links: () => links6,
+  loader: () => loader3
 });
-var import_remix12 = __toModule(require("remix"));
-var import_remix13 = __toModule(require("remix"));
+var import_remix6 = __toModule(require("remix"));
+var import_remix7 = __toModule(require("remix"));
 
 // app/styles/jokes.css
 var jokes_default = "/build/_assets/jokes-MGLBGUHK.css";
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes.tsx
-var loader4 = async ({ request }) => {
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes.tsx
+var loader3 = async ({ request }) => {
   let jokeListItems = await db.joke.findMany({
     take: 10,
     select: { id: true, name: true },
@@ -668,11 +465,11 @@ var loader4 = async ({ request }) => {
   };
   return data;
 };
-var links7 = () => {
+var links6 = () => {
   return [{ rel: "stylesheet", href: jokes_default }];
 };
 function JokesScreen() {
-  let data = (0, import_remix13.useLoaderData)();
+  let data = (0, import_remix7.useLoaderData)();
   return /* @__PURE__ */ React.createElement("div", {
     className: "jokes-layout"
   }, /* @__PURE__ */ React.createElement("header", {
@@ -681,7 +478,7 @@ function JokesScreen() {
     className: "container"
   }, /* @__PURE__ */ React.createElement("h1", {
     className: "home-link"
-  }, /* @__PURE__ */ React.createElement(import_remix13.Link, {
+  }, /* @__PURE__ */ React.createElement(import_remix7.Link, {
     to: "/",
     title: "Remix Jokes",
     "aria-label": "Remix Jokes"
@@ -691,13 +488,13 @@ function JokesScreen() {
     className: "logo-medium"
   }, "Forum"))), data.user ? /* @__PURE__ */ React.createElement("div", {
     className: "user-info"
-  }, /* @__PURE__ */ React.createElement("span", null, `Hi ${data.user.username}`), /* @__PURE__ */ React.createElement(import_remix12.Form, {
+  }, /* @__PURE__ */ React.createElement("span", null, `Hi ${data.user.username}`), /* @__PURE__ */ React.createElement(import_remix6.Form, {
     action: "/logout",
     method: "post"
   }, /* @__PURE__ */ React.createElement("button", {
     type: "submit",
     className: "button"
-  }, "Logout"))) : /* @__PURE__ */ React.createElement(import_remix13.Link, {
+  }, "Logout"))) : /* @__PURE__ */ React.createElement(import_remix7.Link, {
     to: "/login"
   }, "Login"))), /* @__PURE__ */ React.createElement("main", {
     className: "jokes-main"
@@ -705,55 +502,55 @@ function JokesScreen() {
     className: "container"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "jokes-list"
-  }, data.jokeListItems.length ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(import_remix13.Link, {
+  }, data.jokeListItems.length ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(import_remix7.Link, {
     to: "."
   }, "Get More Post Topic"), /* @__PURE__ */ React.createElement("p", null, "Here are a post to check out:"), /* @__PURE__ */ React.createElement("ul", null, data.jokeListItems.map(({ id, name }) => /* @__PURE__ */ React.createElement("li", {
     key: id
-  }, /* @__PURE__ */ React.createElement(import_remix13.Link, {
+  }, /* @__PURE__ */ React.createElement(import_remix7.Link, {
     to: id,
     prefetch: "intent"
-  }, name)))), /* @__PURE__ */ React.createElement(import_remix13.Link, {
+  }, name)))), /* @__PURE__ */ React.createElement(import_remix7.Link, {
     to: "new",
     className: "button"
   }, "Create a Post")) : null), /* @__PURE__ */ React.createElement("div", {
     className: "jokes-outlet"
-  }, /* @__PURE__ */ React.createElement(import_remix13.Outlet, null)))), /* @__PURE__ */ React.createElement("footer", {
+  }, /* @__PURE__ */ React.createElement(import_remix7.Outlet, null)))), /* @__PURE__ */ React.createElement("footer", {
     className: "jokes-footer"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "container"
-  }, /* @__PURE__ */ React.createElement(import_remix13.Link, {
+  }, /* @__PURE__ */ React.createElement(import_remix7.Link, {
     reloadDocument: true,
     to: "/jokes.rss"
   }, "RSS"))));
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes/CommentForm.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes/CommentForm.tsx
 var CommentForm_exports = {};
 __markAsModule(CommentForm_exports);
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes/$jokeId.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes/$jokeId.tsx
 var jokeId_exports = {};
 __export(jokeId_exports, {
-  CatchBoundary: () => CatchBoundary3,
-  ErrorBoundary: () => ErrorBoundary3,
-  action: () => action3,
+  CatchBoundary: () => CatchBoundary2,
+  ErrorBoundary: () => ErrorBoundary2,
+  action: () => action2,
   default: () => JokeRoute,
-  loader: () => loader5,
-  meta: () => meta10
+  loader: () => loader4,
+  meta: () => meta6
 });
-var import_remix15 = __toModule(require("remix"));
+var import_remix9 = __toModule(require("remix"));
 var import_react_router_dom2 = __toModule(require("react-router-dom"));
 
 // app/components/joke.tsx
-var import_remix14 = __toModule(require("remix"));
+var import_remix8 = __toModule(require("remix"));
 function JokeDisplay({
   joke,
   isOwner,
   canDelete = true
 }) {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Here's your hilarious joke:"), /* @__PURE__ */ React.createElement("p", null, joke.content), /* @__PURE__ */ React.createElement(import_remix14.Link, {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Here's your hilarious joke:"), /* @__PURE__ */ React.createElement("p", null, joke.content), /* @__PURE__ */ React.createElement(import_remix8.Link, {
     to: "."
-  }, joke.name, " Permalink"), isOwner ? /* @__PURE__ */ React.createElement(import_remix14.Form, {
+  }, joke.name, " Permalink"), isOwner ? /* @__PURE__ */ React.createElement(import_remix8.Form, {
     method: "post"
   }, /* @__PURE__ */ React.createElement("input", {
     type: "hidden",
@@ -763,7 +560,7 @@ function JokeDisplay({
     type: "submit",
     className: "button",
     disabled: !canDelete
-  }, "Delete")) : null, /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement(import_remix14.Form, {
+  }, "Delete")) : null, /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement("br", null), /* @__PURE__ */ React.createElement(import_remix8.Form, {
     method: "post"
   }, /* @__PURE__ */ React.createElement("input", {
     type: "hidden",
@@ -775,8 +572,8 @@ function JokeDisplay({
   }, "Reply")));
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes/$jokeId.tsx
-var meta10 = ({
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes/$jokeId.tsx
+var meta6 = ({
   data
 }) => {
   if (!data) {
@@ -790,7 +587,7 @@ var meta10 = ({
     description: `Enjoy the "${data.joke.name}" joke and much more`
   };
 };
-var loader5 = async ({ request, params }) => {
+var loader4 = async ({ request, params }) => {
   let userId = await getUserId(request);
   let joke = await db.joke.findUnique({ where: { id: params.jokeId } });
   if (!joke) {
@@ -799,7 +596,7 @@ var loader5 = async ({ request, params }) => {
   let data = { joke, isOwner: userId === joke.jokesterId };
   return data;
 };
-var action3 = async ({ request, params }) => {
+var action2 = async ({ request, params }) => {
   let form = await request.formData();
   if (form.get("_method") === "delete") {
     let userId = await requireUserId(request);
@@ -813,18 +610,18 @@ var action3 = async ({ request, params }) => {
       });
     }
     await db.joke.delete({ where: { id: params.jokeId } });
-    return (0, import_remix15.redirect)("/jokes");
+    return (0, import_remix9.redirect)("/jokes");
   }
 };
 function JokeRoute() {
-  let data = (0, import_remix15.useLoaderData)();
+  let data = (0, import_remix9.useLoaderData)();
   return /* @__PURE__ */ React.createElement(JokeDisplay, {
     joke: data.joke,
     isOwner: data.isOwner
   });
 }
-function CatchBoundary3() {
-  let caught = (0, import_remix15.useCatch)();
+function CatchBoundary2() {
+  let caught = (0, import_remix9.useCatch)();
   let params = (0, import_react_router_dom2.useParams)();
   switch (caught.status) {
     case 404: {
@@ -842,26 +639,26 @@ function CatchBoundary3() {
     }
   }
 }
-function ErrorBoundary3({ error }) {
+function ErrorBoundary2({ error }) {
   console.error(error);
   let { jokeId } = (0, import_react_router_dom2.useParams)();
   return /* @__PURE__ */ React.createElement("div", null, `There was an error loading joke by the id ${jokeId}. Sorry.`);
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes/comment.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes/comment.tsx
 var comment_exports = {};
 __markAsModule(comment_exports);
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes/index.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes/index.tsx
 var jokes_exports2 = {};
 __export(jokes_exports2, {
-  CatchBoundary: () => CatchBoundary4,
-  ErrorBoundary: () => ErrorBoundary4,
+  CatchBoundary: () => CatchBoundary3,
+  ErrorBoundary: () => ErrorBoundary3,
   default: () => JokesIndexRoute,
-  loader: () => loader6
+  loader: () => loader5
 });
-var import_remix16 = __toModule(require("remix"));
-var loader6 = async () => {
+var import_remix10 = __toModule(require("remix"));
+var loader5 = async () => {
   const count = await db.joke.count();
   const randomRowNumber = Math.floor(Math.random() * count);
   let [randomJoke] = await db.joke.findMany({ take: 1, skip: randomRowNumber });
@@ -872,38 +669,38 @@ var loader6 = async () => {
   return data;
 };
 function JokesIndexRoute() {
-  let data = (0, import_remix16.useLoaderData)();
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Here's a random post:"), /* @__PURE__ */ React.createElement("p", null, data.randomJoke.content), /* @__PURE__ */ React.createElement(import_remix16.Link, {
+  let data = (0, import_remix10.useLoaderData)();
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Here's a random post:"), /* @__PURE__ */ React.createElement("p", null, data.randomJoke.content), /* @__PURE__ */ React.createElement(import_remix10.Link, {
     to: data.randomJoke.id
   }, '"', data.randomJoke.name, '" Permalink'));
 }
-function CatchBoundary4() {
-  let caught = (0, import_remix16.useCatch)();
+function CatchBoundary3() {
+  let caught = (0, import_remix10.useCatch)();
   if (caught.status === 404) {
     return /* @__PURE__ */ React.createElement("div", {
       className: "error-container"
-    }, /* @__PURE__ */ React.createElement("p", null, "There are no post to display. Perhaps you want to create ?"), /* @__PURE__ */ React.createElement(import_remix16.Link, {
+    }, /* @__PURE__ */ React.createElement("p", null, "There are no post to display. Perhaps you want to create ?"), /* @__PURE__ */ React.createElement(import_remix10.Link, {
       to: "new"
     }, "Create your own "));
   }
   throw new Error(`Unexpected caught response with status: ${caught.status}`);
 }
-function ErrorBoundary4({ error }) {
+function ErrorBoundary3({ error }) {
   console.error(error);
   return /* @__PURE__ */ React.createElement("div", null, "I did a whoopsies.");
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/jokes/new.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/jokes/new.tsx
 var new_exports = {};
 __export(new_exports, {
-  CatchBoundary: () => CatchBoundary5,
-  ErrorBoundary: () => ErrorBoundary5,
-  action: () => action4,
+  CatchBoundary: () => CatchBoundary4,
+  ErrorBoundary: () => ErrorBoundary4,
+  action: () => action3,
   default: () => NewJokeRoute,
-  loader: () => loader7
+  loader: () => loader6
 });
-var import_remix17 = __toModule(require("remix"));
-var loader7 = async ({ request }) => {
+var import_remix11 = __toModule(require("remix"));
+var loader6 = async ({ request }) => {
   let userId = await getUserId(request);
   if (!userId) {
     throw new Response("Unauthorized", { status: 401 });
@@ -920,7 +717,7 @@ function validateJokeName(name) {
     return `Is it your name ?`;
   }
 }
-var action4 = async ({
+var action3 = async ({
   request
 }) => {
   const userId = await requireUserId(request);
@@ -938,12 +735,12 @@ var action4 = async ({
   if (Object.values(fieldErrors).some(Boolean))
     return { fieldErrors, fields };
   let joke = await db.joke.create({ data: __spreadProps(__spreadValues({}, fields), { jokesterId: userId }) });
-  return (0, import_remix17.redirect)(`/jokes/${joke.id}?redirectTo=/jokes/new`);
+  return (0, import_remix11.redirect)(`/jokes/${joke.id}?redirectTo=/jokes/new`);
 };
 function NewJokeRoute() {
   var _a, _b, _c, _d, _e, _f, _g, _h;
-  let actionData = (0, import_remix17.useActionData)();
-  let transition = (0, import_remix17.useTransition)();
+  let actionData = (0, import_remix11.useActionData)();
+  let transition = (0, import_remix11.useTransition)();
   if (transition.submission) {
     let name = transition.submission.formData.get("name");
     let content = transition.submission.formData.get("content");
@@ -955,7 +752,7 @@ function NewJokeRoute() {
       });
     }
   }
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Create your own post"), /* @__PURE__ */ React.createElement(import_remix17.Form, {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Create your own post"), /* @__PURE__ */ React.createElement(import_remix11.Form, {
     method: "post"
   }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", null, "Name:", " ", /* @__PURE__ */ React.createElement("input", {
     type: "text",
@@ -981,44 +778,44 @@ function NewJokeRoute() {
     className: "button"
   }, "Add"))));
 }
-function CatchBoundary5() {
-  let caught = (0, import_remix17.useCatch)();
+function CatchBoundary4() {
+  let caught = (0, import_remix11.useCatch)();
   if (caught.status === 401) {
     return /* @__PURE__ */ React.createElement("div", {
       className: "error-container"
-    }, /* @__PURE__ */ React.createElement("p", null, "Please login to create post."), /* @__PURE__ */ React.createElement(import_remix17.Link, {
+    }, /* @__PURE__ */ React.createElement("p", null, "Please login to create post."), /* @__PURE__ */ React.createElement(import_remix11.Link, {
       to: "/login?redirectTo=/jokes/new"
     }, "Login"));
   }
   throw new Error(`Unexpected caught response with status: ${caught.status}`);
 }
-function ErrorBoundary5({ error }) {
+function ErrorBoundary4({ error }) {
   console.error(error);
   return /* @__PURE__ */ React.createElement("div", null, "Something unexpected went wrong. Sorry about that.");
 }
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/login.tsx
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/login.tsx
 var login_exports = {};
 __export(login_exports, {
-  action: () => action5,
+  action: () => action4,
   default: () => Login,
-  links: () => links8,
-  meta: () => meta11
+  links: () => links7,
+  meta: () => meta7
 });
-var import_remix18 = __toModule(require("remix"));
+var import_remix12 = __toModule(require("remix"));
 var import_react_router_dom3 = __toModule(require("react-router-dom"));
 
 // app/styles/login.css
 var login_default = "/build/_assets/login-TB27ASMI.css";
 
-// route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/vercel/jokes2/app/routes/login.tsx
-var meta11 = () => {
+// route-module:/home/zegveld/Documents/GitHub/public-forum-page/app/routes/login.tsx
+var meta7 = () => {
   return {
     title: "Remix Jokes | Login",
     description: "Login to submit your own jokes to Remix Jokes!"
   };
 };
-var links8 = () => {
+var links7 = () => {
   return [{ rel: "stylesheet", href: login_default }];
 };
 function validateUsername(username) {
@@ -1031,7 +828,7 @@ function validatePassword(password) {
     return `Passwords must be at least 6 characters long`;
   }
 }
-var action5 = async ({
+var action4 = async ({
   request
 }) => {
   let form = await request.formData();
@@ -1085,14 +882,14 @@ var action5 = async ({
 };
 function Login() {
   var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k;
-  let actionData = (0, import_remix18.useActionData)();
+  let actionData = (0, import_remix12.useActionData)();
   let [searchParams] = (0, import_react_router_dom3.useSearchParams)();
   return /* @__PURE__ */ React.createElement("div", {
     className: "container"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "content",
     "data-light": ""
-  }, /* @__PURE__ */ React.createElement("h1", null, "Login"), /* @__PURE__ */ React.createElement(import_remix18.Form, {
+  }, /* @__PURE__ */ React.createElement("h1", null, "Login"), /* @__PURE__ */ React.createElement(import_remix12.Form, {
     method: "post",
     "aria-describedby": (actionData == null ? void 0 : actionData.formError) ? "form-error-message" : void 0
   }, /* @__PURE__ */ React.createElement("input", {
@@ -1147,9 +944,9 @@ function Login() {
     className: "button"
   }, "Submit"))), /* @__PURE__ */ React.createElement("div", {
     className: "links"
-  }, /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix18.Link, {
+  }, /* @__PURE__ */ React.createElement("ul", null, /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix12.Link, {
     to: "/"
-  }, "Title")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix18.Link, {
+  }, "Title")), /* @__PURE__ */ React.createElement("li", null, /* @__PURE__ */ React.createElement(import_remix12.Link, {
     to: "/jokes"
   }, "Forum")))));
 }
@@ -1182,22 +979,6 @@ var routes = {
     caseSensitive: void 0,
     module: s_mix_cdr_exports
   },
-  "routes/demos/actions": {
-    id: "routes/demos/actions",
-    parentId: "root",
-    path: "demos/actions",
-    index: void 0,
-    caseSensitive: void 0,
-    module: actions_exports
-  },
-  "routes/demos/correct": {
-    id: "routes/demos/correct",
-    parentId: "root",
-    path: "demos/correct",
-    index: void 0,
-    caseSensitive: void 0,
-    module: correct_exports
-  },
   "routes/my-first-post": {
     id: "routes/my-first-post",
     parentId: "root",
@@ -1205,54 +986,6 @@ var routes = {
     index: void 0,
     caseSensitive: void 0,
     module: my_first_post_exports
-  },
-  "routes/demos/params": {
-    id: "routes/demos/params",
-    parentId: "root",
-    path: "demos/params",
-    index: void 0,
-    caseSensitive: void 0,
-    module: params_exports
-  },
-  "routes/demos/params/index": {
-    id: "routes/demos/params/index",
-    parentId: "routes/demos/params",
-    path: void 0,
-    index: true,
-    caseSensitive: void 0,
-    module: params_exports2
-  },
-  "routes/demos/params/$id": {
-    id: "routes/demos/params/$id",
-    parentId: "routes/demos/params",
-    path: ":id",
-    index: void 0,
-    caseSensitive: void 0,
-    module: id_exports
-  },
-  "routes/demos/about": {
-    id: "routes/demos/about",
-    parentId: "root",
-    path: "demos/about",
-    index: void 0,
-    caseSensitive: void 0,
-    module: about_exports
-  },
-  "routes/demos/about/index": {
-    id: "routes/demos/about/index",
-    parentId: "routes/demos/about",
-    path: void 0,
-    index: true,
-    caseSensitive: void 0,
-    module: about_exports2
-  },
-  "routes/demos/about/whoa": {
-    id: "routes/demos/about/whoa",
-    parentId: "routes/demos/about",
-    path: "whoa",
-    index: void 0,
-    caseSensitive: void 0,
-    module: whoa_exports
   },
   "routes/jokes[.]rss": {
     id: "routes/jokes[.]rss",
