@@ -1,9 +1,6 @@
 {
   "builds": [
     {
-      "env": {
-        "ENABLE_FILE_SYSTEM_API": "1"
-      },
       "src": "public/**/*",
       "use": "@vercel/static"
     },
@@ -32,6 +29,5 @@
         }
       ]
     }
-  
   ]
 }
