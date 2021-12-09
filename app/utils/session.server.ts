@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { createCookieSessionStorage, redirect } from "remix";
 import { db } from "./db.server";
 
@@ -14,6 +14,7 @@ export async function register({ username, password }: LoginForm) {
   });
 }
 
+//checking 
 export async function login({ username, password }: LoginForm) {
   let user = await db.user.findUnique({ where: { username } });
   if (!user) return null;
@@ -22,6 +23,7 @@ export async function login({ username, password }: LoginForm) {
   return user;
 }
 
+//.env if not work run prisma push
 let sessionSecret = process.env.SESSION_SECRET;
 if (!sessionSecret) {
   throw new Error("SESSION_SECRET must be set");
