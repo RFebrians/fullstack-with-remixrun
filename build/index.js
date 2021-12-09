@@ -311,10 +311,10 @@ __export(logout_exports, {
 var import_remix4 = __toModule(require("remix"));
 
 // app/utils/session.server.ts
-var import_bcrypt = __toModule(require("bcrypt"));
+var import_bcryptjs = __toModule(require("bcryptjs"));
 var import_remix3 = __toModule(require("remix"));
 async function register({ username, password }) {
-  let passwordHash = await import_bcrypt.default.hash(password, 10);
+  let passwordHash = await import_bcryptjs.default.hash(password, 10);
   return db.user.create({
     data: { username, passwordHash }
   });
@@ -323,7 +323,7 @@ async function login({ username, password }) {
   let user = await db.user.findUnique({ where: { username } });
   if (!user)
     return null;
-  let isCorrectPassword = await import_bcrypt.default.compare(password, user.passwordHash);
+  let isCorrectPassword = await import_bcryptjs.default.compare(password, user.passwordHash);
   if (!isCorrectPassword)
     return null;
   return user;
